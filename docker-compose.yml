@@ -3,6 +3,8 @@ version: "3"
 services:
   web:
     image: "andrebcardoso/myfirstapp:2.0"
+    environment:
+      - MESSAGE=Eu fiz professora Gaby!
     networks:
       labdocker:
         ipv4_address: 172.20.0.2
